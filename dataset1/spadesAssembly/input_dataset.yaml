@@ -1,0 +1,6 @@
+- "left reads":
+  - "/home/ec2-user/data/dataset1/ds1_R1.fastq"
+  "orientation": "fr"
+  "right reads":
+  - "/home/ec2-user/data/dataset1/ds1_R2.fastq"
+  "type": "paired-end"

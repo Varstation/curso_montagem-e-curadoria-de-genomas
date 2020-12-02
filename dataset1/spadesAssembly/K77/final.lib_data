@@ -1,0 +1,56 @@
+µ---
+max read length: 150
+nomerge max read length: 150
+average read length: 150
+average coverage: 48.9759
+libraries:       
+    - type:            paired-end
+      orientation:     fr
+      left reads:      
+        - /home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R1.00.0_0.cor.fastq.gz
+      right reads:     
+        - /home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R2.00.0_0.cor.fastq.gz
+      single reads:    
+        - /home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R_unpaired.00.0_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 499.493
+        insert size deviation: 9.98619
+        insert size left quantile: 487
+        insert size right quantile: 512
+        insert size median: 499
+        insert size mad: 7
+        insert size distribution: { 452: 1, 456: 1, 457: 1, 460: 2, 462: 1, 
+                                    463: 3, 464: 4, 465: 6, 466: 7, 467: 12, 
+                                    468: 21, 469: 18, 470: 37, 471: 30, 
+                                    472: 45, 473: 52, 474: 80, 475: 94, 
+                                    476: 123, 477: 181, 478: 200, 479: 247, 
+                                    480: 332, 481: 377, 482: 409, 483: 519, 
+                                    484: 608, 485: 745, 486: 831, 487: 944, 
+                                    488: 1021, 489: 1232, 490: 1293, 491: 1404, 
+                                    492: 1521, 493: 1657, 494: 1817, 495: 1893, 
+                                    496: 1979, 497: 1998, 498: 2032, 499: 2082, 
+                                    500: 2025, 501: 2124, 502: 2014, 503: 1939, 
+                                    504: 1828, 505: 1757, 506: 1680, 507: 1542, 
+                                    508: 1463, 509: 1328, 510: 1195, 511: 1111, 
+                                    512: 910, 513: 794, 514: 702, 515: 579, 
+                                    516: 510, 517: 456, 518: 376, 519: 313, 
+                                    520: 258, 521: 179, 522: 162, 523: 137, 
+                                    524: 101, 525: 87, 526: 59, 527: 41, 
+                                    528: 39, 529: 34, 530: 23, 531: 13, 
+                                    532: 20, 533: 5, 534: 4, 535: 4, 536: 1, 
+                                    537: 1, 538: 4, 539: 1 }
+        pi threshold:    0
+        binary reads info: 
+          binary converted: true
+          bin reads info file: /home/ec2-user/data/dataset1/spadesAssembly/.bin_reads/INFO_0
+          paired read prefix: /home/ec2-user/data/dataset1/spadesAssembly/.bin_reads/paired_0
+          merged read prefix: /home/ec2-user/data/dataset1/spadesAssembly/.bin_reads/merged_0
+          single read prefix: /home/ec2-user/data/dataset1/spadesAssembly/.bin_reads/single_0
+          chunk num:       16
+        single reads mapped: false
+        library index:   0
+        number of reads: 131500
+        total nucleotides: 19725000
+...

@@ -1,0 +1,15 @@
+2020-12-02 17:29:09 [WRN] BlastDB cmd line: makeblastdb -in "Wildtype.reference.fasta" -dbtype nucl -out ContigProfilerTempDB -title "Generic Blast DB" -parse_seqids
+2020-12-02 17:29:09 [WRN] Blast cmd line: blastn -out "BOutcontigs1e-20.xml" -outfmt 5 -query "spadesAssembly/contigs.fasta" -db "ContigProfilerTempDB" -evalue 1e-20  -soft_masking false -num_threads 1
+2020-12-02 17:29:10 [WRN] Blast cmd line: blastn -out "overlap.xml" -outfmt 5 -query "before.fna" -evalue 1e-05 -subject after.fna
+2020-12-02 17:29:10 [WRN] Blast cmd line: blastn -out "overlap.xml" -outfmt 5 -query "before.fna" -evalue 1e-05 -subject after.fna
+2020-12-02 17:29:10 [WRN] Blast cmd line: blastn -out "overlap.xml" -outfmt 5 -query "before.fna" -evalue 1e-05 -subject after.fna
+2020-12-02 17:29:10 [WRN] Ptt file open failed!
+2020-12-02 17:29:10 [WRN] File: Wildtype.ptt
+2020-12-02 17:29:11 [WRN] ACT binary: /home/ec2-user/tools/artemis/act
+2020-12-02 17:41:53 [WRN] BlastDB cmd line: makeblastdb -in "Wildtype.reference.fasta" -dbtype nucl -out ContigProfilerTempDB -title "Generic Blast DB" -parse_seqids
+2020-12-02 17:41:53 [WRN] Blast cmd line: blastn -out "BOutresult11e-20.xml" -outfmt 5 -query "GFinisher/result1.fasta" -db "ContigProfilerTempDB" -evalue 1e-20  -soft_masking false -num_threads 1
+2020-12-02 17:41:54 [WRN] Blast cmd line: blastn -out "overlap.xml" -outfmt 5 -query "before.fna" -evalue 1e-05 -subject after.fna
+2020-12-02 17:41:54 [WRN] Blast cmd line: blastn -out "overlap.xml" -outfmt 5 -query "before.fna" -evalue 1e-05 -subject after.fna
+2020-12-02 17:41:54 [WRN] Ptt file open failed!
+2020-12-02 17:41:54 [WRN] File: Wildtype.ptt
+2020-12-02 17:41:54 [WRN] ACT binary: /home/ec2-user/tools/artemis/act

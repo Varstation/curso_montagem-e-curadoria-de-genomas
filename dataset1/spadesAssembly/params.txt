@@ -1,0 +1,37 @@
+Command line: /home/ec2-user/bin/spades	-1	/home/ec2-user/data/dataset1/ds1_R1.fastq	-2	/home/ec2-user/data/dataset1/ds1_R2.fastq	-o	/home/ec2-user/data/dataset1/spadesAssembly	
+
+System information:
+  SPAdes version: 3.14.1
+  Python version: 2.7.18
+  OS: Linux-4.14.203-156.332.amzn2.x86_64-x86_64-with-glibc2.2.5
+
+Output dir: /home/ec2-user/data/dataset1/spadesAssembly
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/ec2-user/data/dataset1/ds1_R1.fastq']
+      right reads: ['/home/ec2-user/data/dataset1/ds1_R2.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /home/ec2-user/data/dataset1/spadesAssembly/tmp
+  Threads: 16
+  Memory limit (in Gb): 30
+

@@ -1,0 +1,4 @@
+
+Candidate invalid
+
+ContigId	Num	CandNum	ID	GapStat	Gap desc	Fasta	Fas-pos	SubjectId	SubStrand	Qs	Qe	Ss	Se	alignment	IdentPerc	Gaps	RawScore	SubjectId	SubStrand	Qs	Qe	Ss	Se	alignment	IdentPerc	Gaps	RawScore

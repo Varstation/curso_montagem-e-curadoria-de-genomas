@@ -1,0 +1,66 @@
+-------------------- GENERAL STATS --------------------
+
+Closed gaps (N): 0
+
+Before FGAP: 
+ Gaps: 1
+ Sequences: 1
+ Nodes 2
+ length: 189953 bp
+ GC 33.404
+ N50: 189953
+ Min: 189953
+ Max: 189953
+ Ns: 1
+
+After FGAP: 
+ Gaps: 1
+ Sequences: 1
+ Nodes 2
+ length: 189953 bp
+ GC 33.404
+ N50: 189953
+ Min: 189953
+ Max: 189953
+ Ns: 1
+
+Inserted: 0bp
+Removed : 0bp
+
+Closed gaps by each dataset:
+  contigs.fasta: 0
+
+Closed gaps by type:
+  Negative gap: 0 gaps
+  Zero gap: 0 gaps
+  Positive gap: 0 gaps
+
+-------------------- STATS PER ROUND --------------------
+
+-------------------- PARAMETERS --------------------
+
+	datasetsFiles: contigs.fasta
+	minScore: 50
+	maxEValue: 0
+	minIdentity: 70
+	contigEndLength: 5000
+	edgeTrimLength: 0
+	maxRemoveLength: 25000
+	maxInsertLength: 100000
+	positiveGap: 1
+	zeroGap: 1
+	negativeGap: 1
+	gapChar: N
+	blastPath: NCBI_blast/
+	blastAlignParam: 1,1,1,-3,15
+	blastMaxResults: 200
+	threads: 1
+	Mode: 1
+	Verbose: 1
+	outputPrefix: /home/ec2-user/data/dataset1/GFinisher/fgap6/v1_
+
+--------------------------------------------------
+
+Elapsed time is     0.113 seconds
+12/2/20 5:36 PM
+FGAP v1.8.1

@@ -1,0 +1,66 @@
+/home/ec2-user/bin/quast spadesAssembly/contigs.fasta
+
+Version: 5.0.2, 0bb1dd1b
+
+System information:
+  OS: Linux-4.14.203-156.332.amzn2.x86_64-x86_64-with-glibc2.2.5 (linux_64)
+  Python version: 2.7.18
+  CPUs number: 16
+
+Started: 2020-12-02 17:56:20
+
+Logging to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /home/ec2-user/data/dataset1
+Main parameters: 
+  MODE: default, threads: 4, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  spadesAssembly/contigs.fasta ==> contigs
+
+2020-12-02 17:56:20
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 154810, L50 = 1, Total length = 196272, GC % = 33.42, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2020-12-02 17:56:21
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2020-12-02 17:56:22
+RESULTS:
+  Text versions of total report are saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/report.html
+  PDF version (tables and plots) is saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/report.pdf
+  Icarus (contig browser) is saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/icarus.html
+  Log is saved to /home/ec2-user/data/dataset1/quast_results/results_2020_12_02_17_56_20/quast.log
+
+Finished: 2020-12-02 17:56:22
+Elapsed time: 0:00:01.588351
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

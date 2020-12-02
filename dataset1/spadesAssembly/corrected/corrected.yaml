@@ -1,0 +1,8 @@
+- "left reads":
+  - "/home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R1.00.0_0.cor.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R2.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/home/ec2-user/data/dataset1/spadesAssembly/corrected/ds1_R_unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

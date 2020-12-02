@@ -1,0 +1,13 @@
+# ContigSort clusters
+Maximum iterations	10
+
+Contig id	2	N. of points	4762	major difference	4810
+ID	Cluster Num	Value Center	Array Idx Start	Array Idx End	Start	End	Dist	N.points	% Cov
+2	1	39621	0	4761	35067	42645	7578	4762	1.592
+
+
+Contig id	3	N. of points	151245	major difference	154910
+ID	Cluster Num	Value Center	Array Idx Start	Array Idx End	Start	End	Dist	N.points	% Cov
+3	1	119313	0	151244	35841	197377	161536	151245	1.068
+
+

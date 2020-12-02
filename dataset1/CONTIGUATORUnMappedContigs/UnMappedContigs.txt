@@ -1,0 +1,2 @@
+NODE_4_length_819_cov_48.510782	819
+NODE_5_length_790_cov_152.744741	790
