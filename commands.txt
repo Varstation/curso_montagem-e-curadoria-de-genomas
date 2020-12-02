@@ -1,0 +1,199 @@
+
+ 1019  ~/bin/fastqc ds1_R1.fastq ds1_R2.fastq -o FastQC
+ 1020  mkdir FastQC
+ 1021* fastqc ds1_R1.fastq ds1_R2.fastq -o FastQC
+ 1022  ls
+ 1023  cd FastQC/
+ 1024  ls
+ 1025  pwd
+ 1026  cd ..
+ 1027* 
+ 1028  cd FastQC/
+ 1029  ls
+ 1030  cd ..
+ 1031  ls
+ 1032  cd ..
+ 1033  ls
+ 1034  cd dataset3/
+ 1035  ls
+ 1036  #fastqc ERR4129093.fastq 
+ 1037  ls
+ 1038  mkdir FastQC
+ 1039  ls
+ 1040  fastqc ERR4129093.fastq -o FastQC/
+ 1041  ls
+ 1042  cd FastQC/
+ 1043  ls
+ 1044  pwd
+ 1045  ls
+ 1046  cd ..
+ 1047  ls
+ 1048  cd ..
+ 1049  ls
+ 1050  cd dataset1/
+ 1051  ls
+ 1052  seqtk 
+ 1053  seqtk sample--help
+ 1054  seqtk sample --help
+ 1055  seqtk sample -s 15 ds1_R1.fastq 0.5 
+ 1056  seqtk sample -s 15 ds1_R1.fastq 0.5 > ds1_R1_reduced05.fastq
+ 1057  ls -lh
+ 1058  wc -l ds1_R1.fastq
+ 1059  wc -l ds1_R1_reduced05.fastq
+ 1060  ls
+ 1061  seqtk sample -s 15 ds1_R2.fastq 0.5 > ds1_R2_reduced05.fastq
+ 1062  more ds1_R2_reduced05.fastq
+ 1063  ls
+ 1064  more ds1_R2_reduced05.fastq
+ 1065  ls
+ 1066  java -jar ~/bin/trimmomatic.jar --help
+ 1067  java -jar ~/bin/trimmomatic.jar PE ds1_R1.fastq ds1_R2.fastq ds1_R1_paired.fastq ds1_R1_unpaired.fastq ds1_R2_paired.fastq ds1_R2_unpaired.fastq LEADING:34 
+ 1068  ls
+ 1069  more ds1_R1_unpaired.fastq
+ 1070  #fastqc ds1_R1_paired.fastq ds1_R2_paired.fastq 
+ 1071  mkdir FastQC_trimmnomatic
+ 1072  ls
+ 1073  fastqc ds1_R1_paired.fastq ds1_R2_paired.fastq -o FastQC_trimmnomatic
+ 1074  pwd
+ 1075  ls
+ 1076  cd FastQC_trimmnomatic
+ 1077  ls
+ 1078  cd pwd
+ 1079  ls
+ 1080  pwd
+ 1081  ls
+ 1082  cd ..
+ 1083  ls
+ 1084  cls
+ 1085  ls
+ 1086  cd ..
+ 1087  ls
+ 1088  cd dataset3/
+ 1089  ls
+ 1090  java -jar ~/bin/trimmomatic.jar SE ERR4129093.fastq ERR4129093_trimado.fastq SLIDEWINDOW:4:24
+ 1091  java -jar ~/bin/trimmomatic.jar SE ERR4129093.fastq ERR4129093_trimado.fastq SLIDINGWINDOW:4:24
+ 1092  ls
+ 1093  #fastqc ERR4129093_trimado.fastq 
+ 1094  mkdir Fastqc_trimado
+ 1095  fastqc ERR4129093_trimado.fastq -o Fastqc_trimado/
+ 1096  ls
+ 1097  cd Fastqc_trimado
+ 1098  ls
+ 1099  pwd
+ 1100  cd ..
+ 1101  ls
+ 1102  cd ..
+ 1103  ls
+ 1104  cd dataset1/
+ 1105  ls
+ 1106  spades -1 ds1_R1.fastq -2 ds1_R2.fastq -o spadesAssembly
+ 1107  ls
+ 1108  cd spadesAssembly/
+ 1109  ls
+ 1110  cd corrected/
+ 1111  ls
+ 1112  cd ..
+ 1113  ls
+ 1114  more contigs.fasta 
+ 1115  ls
+ 1116  grep ">" contigs.fasta 
+ 1117  ls
+ 1118  spades --help
+ 1119  ls
+ 1120  cd ..
+ 1121  ls
+ 1122  python ~/bin/contiguator -c spadesAssembly/contigs.fasta -r reference.fasta -f CONTIGUATOR
+ 1123  ls
+ 1124  cd CONTIGUATORMap_Wildtype/
+ 1125  ls
+ 1126  pwd
+ 1127  ls
+ 1128  cd ..
+ 1129  ls
+ 1130  cd ..
+ 1131  ls
+ 1132  cd ..
+ 1133  l
+ 1134  ls
+ 1135  cd bin/
+ 1136  ls
+ 1137  java -Xms2G -Xmx4G -jar GenomeFinisher.jar -i ~/data/dataset1/CONTIGUATORMap_Wildtype/PseudoContig.fsa -ds ~/data/dataset1/spadesAssembly/contigs.fasta -ref ~/data/dataset1/reference.fasta -o ~/data/dataset1/GFinisher
+ 1138  cd ..ls
+ 1139  cd ..
+ 1140  ls
+ 1141  cd data/
+ 1142  ls
+ 1143  cd dataset1/
+ 1144  ls
+ 1145  cd GFinisher
+ 1146  ls
+ 1147  grep ">" result1.fasta 
+ 1148  ls
+ 1149  cd ..
+ 1150  ls
+ 1151  python ~/bin/contiguator -c GFinisher/result1.fasta -r reference.fasta -f GFinisherContigugator
+ 1152  cd GFinisherContigugatorMap_Wildtype/
+ 1153  ls
+ 1154  pwd
+ 1155  ls
+ 1156  cd ..
+ 1157  ls
+ 1158  cd ..
+ 1159  ls
+ 1160  cd dataset
+ 1161  cd dataset1/
+ 1162  ls
+ 1163  quast spadesAssembly/contigs.fasta 
+ 1164  ls
+ 1165  cd ..
+ 1166  ls
+ 1167  df -h
+ 1168  ls
+ 1169  cd ..
+ 1170  ls
+ 1171  cd data/
+ 1172  ls
+ 1173  cd ..
+ 1174  ls
+ 1214  ls
+ 1215  cd ..
+ 1216  ls
+ 1217  cd tools/
+ 1218  ls
+ 1219  cd ..
+ 1220  ls
+ 1221  cd data/
+ 1222  ls
+ 1223  cd dataset1/
+ 1224  ls
+ 1225  cd spadesAssembly/
+ 1226  ls
+ 1227  pwd
+ 1228  ls
+ 1229  more contigs.paths 
+ 1230  ls
+ 1231  cd ..
+ 1232  ls
+ 1233  pwd
+ 1234  cd GFinisher
+ 1235  cd ..
+ 1236  cd cd GFinisherContigugatorMap_Wildtype
+ 1237  cd GFinisherContigugatorMap_Wildtype
+ 1238  ls
+ 1239  pwd
+ 1240  cd ..
+ 1241  ls
+ 1242  cd ..
+ 1243  ls
+ 1244  cd ..
+ 1245  ls
+ 1246  cd data/
+ 1247  cd dataset1/
+ 1248  ls
+ 1249  pwd
+ 1250  ls
+ 1251  cd spadesAssembly/
+ 1252  ls
+ 1253  more contigs.paths 
+ 1254  ls
+ 1255  history > commands.txt
